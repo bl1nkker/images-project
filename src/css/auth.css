@@ -1,0 +1,27 @@
+.auth-form{
+    display: flex;
+    height: 80vh;
+    width: 30vw;
+    margin: 1em auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.auth-form.auth-success{background-color: var(--mode-success);}
+.auth-form.auth-error{background-color: var(--mode-error);}
+
+.auth-form .input-field{
+    width: 80%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.auth-form .btn-alt{
+    padding: 10px 5px;
+    border-radius: 15%;
+    margin-top: 10px;
+
+}

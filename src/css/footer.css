@@ -1,0 +1,25 @@
+.footer-container{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    top:50vh;
+
+    padding: 3em 0;
+}
+
+.footer-media-links{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.footer-media-links a{text-decoration: none;}
+.telegram,.vk,.linkedin{color: rgb(99, 99, 250);}
+.github{color: rgb(218, 214, 214);}
+.instagram{color:rgb(255, 67, 130)}

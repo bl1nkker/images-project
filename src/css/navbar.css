@@ -1,0 +1,47 @@
+
+.navbar-container{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    border: 1px black solid;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-title{
+    /* font-style: italic; */
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--main-title-color);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-items{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.navbar-userlogo{color: var(--main-title-color);}
+
+.navbar-button :is(button, a){
+    text-decoration: none; 
+    color: var(--secondary-color);
+    border: none;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    border-bottom: 1px var(--third-color) solid;
+    cursor: pointer;
+}
+
+.navbar-button :is(button:hover, a:hover){
+    color: var(--third-color);
+    border-bottom: 1px var(--secondary-color) solid;
+}
+
+.navbar-button{
+    list-style: none;
+    color: var(--secondary-color);
+}

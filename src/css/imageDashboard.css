@@ -1,0 +1,95 @@
+.dashboard-container{
+    width: var(--content-stnd-width);
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--backdrop-color);
+ 
+}
+
+/* Image Container */
+.image-summary-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1em;
+    margin: 2em 0;
+}
+
+.image-summary-container img{
+    max-width: 35vw;
+    margin: auto;
+}
+
+
+
+/* Actions, Buttons*/
+.image-summary-actions{
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-creator-actions{
+    position: absolute;
+    right: 0;
+    top:10px;
+}
+
+.image-creator-actions .btn-main{
+    width: 40px;
+}
+
+/* Image Tags */
+.image-summary-tags{
+    display: flex;
+    margin:5px auto;
+    border-top: 1px var(--third-color) solid;
+    width: 80%;
+}
+
+.image-summary-tag{
+    margin-right: 10px;
+}
+
+/* Image Creator Info */
+.image-creator{
+    display: flex;
+}
+
+.image-creator-icon{
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-creator-name{
+    margin-bottom: 0;
+}
+
+.image-creator-sum{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+
+.image-creator-time{
+    font-size: 12px;
+    color:gray;
+    margin-top: 0;
+}

@@ -1,0 +1,78 @@
+/* :root {
+    --primary-color:orangered;
+    --secondary-color:rgb(187, 255, 0);
+} */
+
+.event-modal{
+    width:90%;
+    background-color: var(--create-container-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    position: fixed;
+    z-index: 2;
+    top:20vh;
+    left: 5%;
+}
+
+.event-modal-form{
+    padding: 1rem;
+    color:var(--secondary-color);
+    font-size: 20px;
+}
+
+.event-modal-header{
+    margin: 0;
+    padding: 1rem;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.event-modal-actions{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.event-modal-actions .btn{
+    margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+    .event-modal {
+        width: 30rem;
+        left: calc((100% - 30rem)/2)
+    }
+}
+
+
+.event-modal-field :is(label, input, textarea){
+    width: 100%;
+}
+
+.event-modal-field{
+    margin-bottom: 1rem;
+}
+
+.backdrop{
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100%;
+}
+
+.event-modal-input{
+    height: 24px;
+    font-size: 16px;
+    background-color: rgba(255, 78, 246, 0.425) !important; 
+}
+
+
+.action-wait{
+    background-color: var(--mode-wait);
+}
+
+.action-success{
+    background-color: var(--mode-success);
+}
