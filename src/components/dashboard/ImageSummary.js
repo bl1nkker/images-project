@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { likeImage, deleteImage, setImageToEdit } from './../../redux/actions/imageActions'
 import { saveImage,deleteImageFromUser } from './../../redux/actions/authActions'
@@ -31,7 +31,8 @@ function ImageSummary({ imageObject, setWaitingMode,setOperationSuccess, setOper
         if (currentImage.likes.length > 0) {
           return currentUser.userId.toString() !== -1 
             ? (
-              <><ThumbUpAltIcon fontSize="small" />&nbsp;{currentImage.likes.length > 2 ? `You and ${currentImage.likes.length - 1} others` : `${currentImage.likes.length} like${currentImage.likes.length > 1 ? 's' : ''}` }</>
+            //   <><ThumbUpAltIcon fontSize="small" />&nbsp;{currentImage.likes.length > 2 ? `You and ${currentImage.likes.length - 1} others` : `${currentImage.likes.length} like${currentImage.likes.length > 1 ? 's' : ''}` }</>
+            <><ThumbUpAltIcon fontSize="small" />&nbsp;{currentImage.likes.length} {currentImage.likes.length === 1 ? 'Like' : 'Likes'}</>
             ) : (
               <><ThumbUpAltOutlined fontSize="small" />&nbsp;{currentImage.likes.length} {currentImage.likes.length === 1 ? 'Like' : 'Likes'}</>
             );

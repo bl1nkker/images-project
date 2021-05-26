@@ -6,9 +6,7 @@ import { saveEditedImage } from './../../redux/actions/authActions'
 
 function ImageCreator({ cancelHandler, createdImageHandler, createdImage, setCreatedImage, imageToEdit, setWaitingMode,setOperationSuccess, setOperationName }) {
     const dispatch = useDispatch()
-    console.log(imageToEdit)
     const [updatedImage, setUpdatedImage] = useState(imageToEdit?.image ? {...imageToEdit, tags:imageToEdit?.tags.join(', ')} : null)
-    console.log(updatedImage)
 
     const updateImageHandler = () =>{
         dispatch(editImage(updatedImage._id, {...updatedImage, tags:updatedImage.tags.split(', ')}, setOperationSuccess))

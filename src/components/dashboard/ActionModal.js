@@ -1,6 +1,5 @@
 import React from 'react'
 import './../../css/actionModal.css'
-import FilterTiltShiftIcon from '@material-ui/icons/FilterTiltShift';
 import DoneIcon from '@material-ui/icons/Done';
 
 function ActionModal({ setWaitingMode, operationSuccess, setOperationSuccess, operationName, setOperationName }) {

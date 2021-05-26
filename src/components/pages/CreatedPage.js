@@ -5,7 +5,7 @@ import ImageCreatorBackdrop from './../dashboard/ImageCreatorBackdrop.js'
 import ActionModal  from './../dashboard/ActionModal'
 
 function CreatedPage() {
-    const user = useSelector(state => state.user)
+    const user = useSelector(state => state.user.currentUserData.createdImages)
 
     const [operationSuccess, setOperationSuccess] = useState(false)
     const [waitingMode, setWaitingMode] = useState(false)
@@ -28,7 +28,7 @@ function CreatedPage() {
                     setOperationSuccess={setOperationSuccess}
                     operationName={operationName}
                     setOperationName={setOperationName} 
-                    images={user.currentUserData.createdImages}/>
+                    images={user}/>
         </div>
     )
 }

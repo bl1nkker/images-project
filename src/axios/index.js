@@ -2,7 +2,8 @@ import axios from 'axios'
 import { fetchImagesQuery, createImageMutation, likeImageMutation, saveImageMutation, deleteImageMutation, editImageMutation, findImagesByTagsQuery } from './../graphql/imageGraphql.js'
 import { signInUserQuery, signUpMutation } from './../graphql/authGraphql.js' 
 
-const API = axios.create({ baseURL: 'https://bl1nk-images.herokuapp.com/graphql' })
+// const API = axios.create({ baseURL: 'https://bl1nk-images.herokuapp.com/graphql' })
+const API = axios.create({ baseURL: 'http://localhost:5000/graphql' })
 
 API.interceptors.request.use( (req) => {
     if (localStorage.getItem('profile')) {

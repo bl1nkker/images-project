@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './../../css/navbar.css'
 import { Link, useLocation } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { logOutUser } from './../../redux/actions/authActions.js'
 import decode from 'jwt-decode'
 

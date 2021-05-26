@@ -65,7 +65,6 @@ export const saveEditedImage = (imageId, { image, creatorUsername, tags }) => as
     }
 }
 
-// Hate myself (delete this plz))
 export const storeLike = (imageId) => async(dispatch) =>{
     dispatch({ type: STORE_LIKE, payload: { imageId } })
 }
